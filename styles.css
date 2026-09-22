@@ -1,1 +1,1148 @@
-*{box-sizing:border-box}body{margin:0;background:#07111f;color:#edf4ff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:30px}header{padding:20px 16px 14px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#07111fee;backdrop-filter:blur(12px);z-index:2}header small{color:#71839a;letter-spacing:2px;font-size:9px}h1{font-size:22px;margin:4px 0}h1 b{font-size:11px;color:#6db2ff}header button{background:#102035;color:#dcecff;border:1px solid #213651;border-radius:12px;width:44px;height:44px;font-size:25px}main{padding:0 14px;max-width:760px;margin:auto}.hero,.stats>div,.card{background:#0d1a2b;border:1px solid #1c3048;border-radius:18px}.hero{padding:20px;display:flex;justify-content:space-between;align-items:center}.hero small{display:block;color:#788aa1;font-size:10px}.hero strong{display:block;font-size:28px;margin:5px 0}.hero span{color:#48d582;font-size:12px;font-weight:700}.score{width:74px;height:74px;border:4px solid #2b557f;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}.score b{font-size:20px}.score small{font-size:8px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0 22px}.stats>div{padding:13px 4px;text-align:center}.stats b{display:block;font-size:19px}.stats small{font-size:10px;color:#788aa1}.title{display:flex;justify-content:space-between;align-items:end;margin:0 3px 10px}.title h2{font-size:18px;margin:0}.title small{font-size:9px;color:#71839a}#list{display:grid;gap:10px}.card{padding:15px}.league{font-size:10px;color:#8ea1b8;text-transform:uppercase}.match{font-weight:750;margin:4px 0}.meta{display:flex;justify-content:space-between;color:#879ab0;font-size:10px}.bar{height:8px;background:#18283d;border-radius:8px;margin:12px 0 8px;overflow:hidden}.bar i{display:block;height:100%;background:#48d582}.bottom{display:flex;justify-content:space-between;font-size:11px;color:#91a4ba}.badge{padding:4px 7px;background:#153025;color:#71df9d;border-radius:7px}.info{margin-top:16px;background:#0b1727;border:1px solid #1b2b40;border-radius:16px;padding:16px}.info h2{font-size:15px;margin:0 0 6px}.info p{font-size:11px;line-height:1.5;color:#8fa1b6}.note{background:#111f31;padding:10px;border-radius:9px}
+/* =====================================================
+   BTTS SCANNER PRO
+   Interface v0.4
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #080b10;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at top,
+      #111923 0%,
+      #080b10 45%
+    );
+
+  color: #edf2f7;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  min-height: 100vh;
+}
+
+
+/* =====================================================
+   APP
+===================================================== */
+
+.app {
+
+  width: 100%;
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  padding:
+    20px
+    14px
+    40px;
+
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.header {
+
+  margin-bottom: 18px;
+
+}
+
+
+.eyebrow {
+
+  color: #7f8b99;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+
+  text-transform: uppercase;
+
+}
+
+
+h1 {
+
+  margin:
+    4px
+    0
+    5px;
+
+  font-size: 30px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+}
+
+
+h1 span {
+
+  color: #6ee7b7;
+
+}
+
+
+.subtitle {
+
+  margin: 0;
+
+  color: #8f9baa;
+
+  font-size: 13px;
+
+}
+
+
+.system-status {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 10px;
+
+  padding:
+    6px
+    9px;
+
+  border:
+    1px solid
+    #26313e;
+
+  border-radius: 999px;
+
+  background: #0c1118;
+
+  color: #9ba7b5;
+
+  font-size: 10px;
+
+}
+
+
+.status-dot {
+
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #e8b94f;
+
+  box-shadow:
+    0 0 8px
+    rgba(232, 185, 79, .55);
+
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card {
+
+  margin:
+    12px
+    0;
+
+  padding: 16px;
+
+  background: rgba(16, 21, 29, .96);
+
+  border:
+    1px solid
+    #202936;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, .12);
+
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+.section-title,
+.section-header {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+}
+
+
+h2 {
+
+  margin:
+    3px
+    0
+    14px;
+
+  font-size: 19px;
+
+  line-height: 1.2;
+
+}
+
+
+h3 {
+
+  margin: 0;
+
+}
+
+
+/* =====================================================
+   BANCA
+===================================================== */
+
+.bankroll-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr
+    1fr;
+
+  gap: 10px;
+
+}
+
+
+.input-group label {
+
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #8f9baa;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+}
+
+
+.input-money,
+.input-percent {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  height: 43px;
+
+  padding:
+    0
+    10px;
+
+  background: #080c12;
+
+  border:
+    1px solid
+    #2a3442;
+
+  border-radius: 10px;
+
+  color: #8f9baa;
+
+}
+
+
+.input-money input,
+.input-percent input {
+
+  width: 100%;
+
+  height: 100%;
+
+  border: 0;
+
+  outline: 0;
+
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 14px;
+
+}
+
+
+.input-money input::-webkit-inner-spin-button,
+.input-money input::-webkit-outer-spin-button,
+.input-percent input::-webkit-inner-spin-button,
+.input-percent input::-webkit-outer-spin-button {
+
+  -webkit-appearance: none;
+
+}
+
+
+.stake-result {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding:
+    8px
+    10px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #101b19,
+      #0c1215
+    );
+
+  border:
+    1px solid
+    #263d39;
+
+  border-radius: 10px;
+
+}
+
+
+.stake-result small {
+
+  color: #7f8b99;
+
+  font-size: 10px;
+
+}
+
+
+.stake-result strong {
+
+  margin-top: 4px;
+
+  color: #6ee7b7;
+
+  font-size: 17px;
+
+}
+
+
+/* =====================================================
+   MÉTRICAS
+===================================================== */
+
+.metrics {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 7px;
+
+  margin:
+    12px
+    0;
+
+}
+
+
+.metric {
+
+  min-width: 0;
+
+  padding:
+    11px
+    5px;
+
+  text-align: center;
+
+  background: #10151d;
+
+  border:
+    1px solid
+    #202936;
+
+  border-radius: 13px;
+
+}
+
+
+.metric small {
+
+  display: block;
+
+  color: #7f8b99;
+
+  font-size: 9px;
+
+}
+
+
+.metric strong {
+
+  display: block;
+
+  margin-top: 5px;
+
+  color: #eaf0f6;
+
+  font-size: 17px;
+
+}
+
+
+/* =====================================================
+   FILTROS
+===================================================== */
+
+.filters {
+
+  display: flex;
+
+  gap: 7px;
+
+  margin:
+    12px
+    0;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+
+}
+
+
+.filters::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+
+.filter-button {
+
+  flex:
+    0
+    0
+    auto;
+
+  padding:
+    9px
+    13px;
+
+  border:
+    1px solid
+    #293443;
+
+  border-radius: 999px;
+
+  background: #10151d;
+
+  color: #aeb8c5;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.filter-button.active {
+
+  background: #1a2633;
+
+  border-color: #4b5b6d;
+
+  color: #fff;
+
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.data-status {
+
+  padding:
+    6px
+    8px;
+
+  border:
+    1px solid
+    #293443;
+
+  border-radius: 999px;
+
+  color: #8f9baa;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.empty-state {
+
+  padding:
+    30px
+    12px;
+
+  text-align: center;
+
+}
+
+
+.empty-icon {
+
+  margin-bottom: 7px;
+
+  font-size: 34px;
+
+}
+
+
+.empty-state h3 {
+
+  margin-bottom: 8px;
+
+  color: #e8edf3;
+
+  font-size: 17px;
+
+}
+
+
+.empty-state p {
+
+  max-width: 500px;
+
+  margin:
+    5px
+    auto;
+
+  color: #8f9baa;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+
+}
+
+
+.important-message {
+
+  color: #d6b968 !important;
+
+}
+
+
+/* =====================================================
+   MATCH CARD
+===================================================== */
+
+.matches-container {
+
+  width: 100%;
+
+}
+
+
+.match-card {
+
+  margin:
+    9px
+    0;
+
+  padding: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d131b,
+      #0a0f15
+    );
+
+  border:
+    1px solid
+    #26303d;
+
+  border-radius: 14px;
+
+}
+
+
+.match-header {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+}
+
+
+.match-header span {
+
+  color: #9ca8b6;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+}
+
+
+.match-header strong {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 38px;
+
+  height: 32px;
+
+  border-radius: 9px;
+
+  background: #151d27;
+
+  color: #f1f5f9;
+
+  font-size: 16px;
+
+}
+
+
+.match-league {
+
+  margin-top: 9px;
+
+  color: #738091;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: .04em;
+
+}
+
+
+.match-card h3 {
+
+  margin:
+    8px
+    0;
+
+  color: #edf2f7;
+
+  font-size: 17px;
+
+  line-height: 1.3;
+
+}
+
+
+.match-card h3 span {
+
+  margin:
+    0
+    5px;
+
+  color: #647080;
+
+}
+
+
+.match-info {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  color: #8f9baa;
+
+  font-size: 10px;
+
+}
+
+
+.match-reason {
+
+  margin-top: 10px;
+
+  padding:
+    9px
+    10px;
+
+  background: #111820;
+
+  border-radius: 9px;
+
+  color: #aeb8c5;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+
+}
+
+
+/* =====================================================
+   MOTOR
+===================================================== */
+
+.muted {
+
+  margin-top: 0;
+
+  color: #8f9baa;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+
+}
+
+
+.engine-list {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 8px;
+
+  margin-top: 13px;
+
+}
+
+
+.engine-item {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  padding:
+    10px;
+
+  background: #0b1017;
+
+  border:
+    1px solid
+    #222d39;
+
+  border-radius: 11px;
+
+}
+
+
+.engine-item > span {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 25px;
+
+  height: 25px;
+
+  flex:
+    0
+    0
+    auto;
+
+  border-radius: 7px;
+
+  background: #17212c;
+
+  color: #7f8b99;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+}
+
+
+.engine-item strong {
+
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #dce4ec;
+
+  font-size: 11px;
+
+}
+
+
+.engine-item small {
+
+  display: block;
+
+  color: #788594;
+
+  font-size: 9px;
+
+  line-height: 1.35;
+
+}
+
+
+.warning-box {
+
+  margin-top: 13px;
+
+  padding:
+    11px;
+
+  background: #1a1710;
+
+  border:
+    1px solid
+    #3b321f;
+
+  border-radius: 10px;
+
+  color: #d6bd73;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+}
+
+
+/* =====================================================
+   PERFORMANCE
+===================================================== */
+
+.performance-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 8px;
+
+}
+
+
+.performance-grid > div {
+
+  padding:
+    11px
+    6px;
+
+  text-align: center;
+
+  background: #0b1017;
+
+  border:
+    1px solid
+    #222d39;
+
+  border-radius: 10px;
+
+}
+
+
+.performance-grid small {
+
+  display: block;
+
+  color: #788594;
+
+  font-size: 9px;
+
+}
+
+
+.performance-grid strong {
+
+  display: block;
+
+  margin-top: 5px;
+
+  color: #edf2f7;
+
+  font-size: 17px;
+
+}
+
+
+/* =====================================================
+   ARQUITETURA
+===================================================== */
+
+.architecture {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  flex-wrap: wrap;
+
+  margin:
+    12px
+    0
+    15px;
+
+}
+
+
+.architecture div {
+
+  padding:
+    7px
+    9px;
+
+  background: #0b1017;
+
+  border:
+    1px solid
+    #26313e;
+
+  border-radius: 8px;
+
+  color: #9ba7b5;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+}
+
+
+.architecture span {
+
+  color: #5d6a79;
+
+  font-size: 10px;
+
+}
+
+
+.architecture .highlight {
+
+  border-color: #36594c;
+
+  color: #6ee7b7;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: #657180;
+
+  font-size: 9px;
+
+  line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .app {
+
+    padding:
+      17px
+      12px
+      35px;
+
+  }
+
+
+  h1 {
+
+    font-size: 28px;
+
+  }
+
+
+  .bankroll-grid {
+
+    grid-template-columns:
+      1fr
+      1fr;
+
+  }
+
+
+  .stake-result {
+
+    grid-column:
+      1 /
+      -1;
+
+  }
+
+
+  .metrics {
+
+    grid-template-columns:
+      repeat(3, 1fr);
+
+  }
+
+
+  .metric:last-child {
+
+    grid-column:
+      span 3;
+
+  }
+
+
+  .engine-list {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .performance-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .architecture {
+
+    flex-direction:
+      column;
+
+  }
+
+
+  .architecture span {
+
+    transform:
+      rotate(90deg);
+
+  }
+
+}
+
+
+/* =====================================================
+   TELAS MUITO PEQUENAS
+===================================================== */
+
+@media (max-width: 360px) {
+
+  .metrics {
+
+    gap: 5px;
+
+  }
+
+
+  .metric {
+
+    padding:
+      9px
+      3px;
+
+  }
+
+
+  .metric strong {
+
+    font-size: 15px;
+
+  }
+
+
+  .match-card h3 {
+
+    font-size: 15px;
+
+  }
+
+}
